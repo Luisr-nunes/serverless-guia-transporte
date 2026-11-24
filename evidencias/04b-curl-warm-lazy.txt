@@ -1,0 +1,7 @@
+== start-api COM --warm-containers LAZY: 3 chamadas ==
+{"guia": "G-R-002", "hospital": "H-Caruaru", "bolsas": [], "invocacaoNesteAmbiente": 1}
+[HTTP 201] 3.926810s
+{"guia": "G-R-002", "hospital": "H-Caruaru", "bolsas": [], "invocacaoNesteAmbiente": 2}
+[HTTP 201] 1.096308s
+{"guia": "G-R-002", "hospital": "H-Caruaru", "bolsas": [], "invocacaoNesteAmbiente": 3}
+[HTTP 201] 1.119317s

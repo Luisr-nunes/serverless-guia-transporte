@@ -1,0 +1,28 @@
+== sam local invoke (1a vez, 23:35:13) ==
+No current session found, using default AWS::AccountId
+Invoking app.lambda_handler (python3.12)
+Local image was not found.
+Removing rapid images for repo public.ecr.aws/sam/emulation-python3.12
+Building image................................................................................................................................................................................................................
+Using local image: public.ecr.aws/lambda/python:3.12-rapid-x86_64.
+
+Mounting C:\Users\luisr\source\repos\serverless-guia-transporte\.aws-sam\build\HelloWorldFunction as /var/task:ro,delegated, inside runtime container
+SAM_CONTAINER_ID: b9d4bf4eceb669969189d750373462c3f377754e2079a5589834d6c7b04be375
+START RequestId: 7bdf26f4-e6cb-44d8-b3ef-753a59a1500b Version: $LATEST
+[ERROR] JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/var/task/app.py", line 9, in lambda_handler
+    pedido = json.loads(event.get("body") or "{}")
+  File "/var/lang/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/var/lang/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/var/lang/lib/python3.12/json/decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+END RequestId: 7bdf26f4-e6cb-44d8-b3ef-753a59a1500b
+REPORT RequestId: 7bdf26f4-e6cb-44d8-b3ef-753a59a1500b	Init Duration: 0.06 ms	Duration: 96.38 ms	Billed Duration: 97 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+{"errorMessage": "Expecting value: line 1 column 1 (char 0)", "errorType": "JSONDecodeError", "requestId": "7bdf26f4-e6cb-44d8-b3ef-753a59a1500b", "stackTrace": ["  File \"/var/task/app.py\", line 9, in lambda_handler\n    pedido = json.loads(event.get(\"body\") or \"{}\")\n", "  File \"/var/lang/lib/python3.12/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n", "  File \"/var/lang/lib/python3.12/json/decoder.py\", line 338, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n", "  File \"/var/lang/lib/python3.12/json/decoder.py\", line 356, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\n"]}
+
+real	0m28.055s
+user	0m0.000s
+sys	0m0.015s

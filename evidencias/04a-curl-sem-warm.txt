@@ -1,0 +1,7 @@
+== start-api SEM --warm-containers: 3 chamadas ==
+{"guia": "G-R-002", "hospital": "H-Caruaru", "bolsas": [], "invocacaoNesteAmbiente": 1}
+[HTTP 201] 1.211157s
+{"guia": "G-R-002", "hospital": "H-Caruaru", "bolsas": [], "invocacaoNesteAmbiente": 2}
+[HTTP 201] 1.080070s
+{"guia": "G-R-002", "hospital": "H-Caruaru", "bolsas": [], "invocacaoNesteAmbiente": 3}
+[HTTP 201] 1.083327s
