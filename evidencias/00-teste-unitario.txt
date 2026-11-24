@@ -1,0 +1,10 @@
+== teste unitario ==
+test_com_requisicao_id_devolve_guia_201 (tests.unit.test_handler.TestGuiaTransporte.test_com_requisicao_id_devolve_guia_201) ... ok
+test_contador_cresce_no_mesmo_ambiente (tests.unit.test_handler.TestGuiaTransporte.test_contador_cresce_no_mesmo_ambiente) ... ok
+test_corpo_em_base64_como_no_evento_do_sam (tests.unit.test_handler.TestGuiaTransporte.test_corpo_em_base64_como_no_evento_do_sam) ... ok
+test_sem_requisicao_id_devolve_400 (tests.unit.test_handler.TestGuiaTransporte.test_sem_requisicao_id_devolve_400) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

@@ -1,0 +1,3 @@
+== Timeout 10 s, demorar=true (a funcao dorme 5 s) ==
+{"guia": "G-R-003", "hospital": null, "bolsas": [], "invocacaoNesteAmbiente": 1}
+[HTTP 201] 6.205288s

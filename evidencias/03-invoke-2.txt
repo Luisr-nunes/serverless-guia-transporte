@@ -1,0 +1,16 @@
+== sam local invoke (2a vez, 23:36:32) ==
+No current session found, using default AWS::AccountId
+Invoking app.lambda_handler (python3.12)
+Local image is up-to-date
+Using local image: public.ecr.aws/lambda/python:3.12-rapid-x86_64.
+
+Mounting C:\Users\luisr\source\repos\serverless-guia-transporte\.aws-sam\build\HelloWorldFunction as /var/task:ro,delegated, inside runtime container
+SAM_CONTAINER_ID: 383dbf374fc4030b03229c74ae3a073da353fd95be93952f7af8dfe9578c63d0
+START RequestId: 48aff3b6-73da-4f1b-a77e-f1a1e7cf3495 Version: $LATEST
+END RequestId: 48aff3b6-73da-4f1b-a77e-f1a1e7cf3495
+REPORT RequestId: 48aff3b6-73da-4f1b-a77e-f1a1e7cf3495	Init Duration: 0.13 ms	Duration: 104.30 ms	Billed Duration: 105 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+{"statusCode": 201, "body": "{\"guia\": \"G-R-001\", \"hospital\": \"H-Recife\", \"bolsas\": [\"O-NEG-0142\"], \"invocacaoNesteAmbiente\": 1}"}
+
+real	0m5.593s
+user	0m0.000s
+sys	0m0.015s
